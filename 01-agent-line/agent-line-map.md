@@ -1,33 +1,23 @@
-# Agent Line Map: Cortex PM Chief-of-Staff Agent
+# Agent-Line Map: Cortex
 
-> Module 1 · The Agent Line
+## Decisions, scored
 
-## The workflow, decision by decision
-
-List every discrete decision or action in your agent's workflow, then score each one and place it **above** the line (a human owns it) or **below** (the agent owns it). Borderline calls get an HITL checkpoint.
-
-| Decision / action | Reversibility (H/M/L) | Blast radius (H/M/L) | Measurability (H/M/L) | Above / Below | HITL? |
+| # | Decision | Reversibility | Blast radius | Measurability | Verdict |
 |---|---|---|---|---|---|
-| _Pull project state + recent GitHub/Jira activity_ | H | L | H | Below | · |
-| _Draft the weekly leadership status update_ | H | M | M | Below | spot-check |
-| _Propose next sprint's stories from the PRD (within cap)_ | M | M | M | Below | spot-check |
-| _Post the update to a channel / commit a ship date_ | L | H | M | Above | required |
-| _Mark a launch gate green / merge or close a ticket_ | L | H | M | Above | required |
-| _…_ | | | | | |
+| 1 | Pull a project’s state and recent activity | High | Low | High | Below |
+| 2 | Decide which past updates / context are relevant | High | Low | Med | Below |
+| 3 | Draft the leadership status update | High | Low | High | Below |
+| 4 | Decide the tone / commitment level of the update | Low | Med | Med | Above |
+| 5 | Choose which risk call to escalate | Med | Med | Med | HITL |
+| 6 | Propose a story batch within the cap | Med | Med | Low | HITL |
+| 7 | Post an update, or approve a company-wide one | Low | High | Low | Above |
 
-## Agent anatomy (sketch)
+## One-line justifications
 
-- **Model:** _your default fast model + when you escalate to a frontier model, and why_
-- **Tools:** _project + activity lookup (read) · past-update search · roadmap · team norms · story proposal (capped) …_
-- **Memory:** _what persists across runs (roadmap, decisions, norms) vs. purged_
-- **Loop:** _placeholder, defined in M2 loop-spec.md_
-- **Bounds:** _placeholder, defined in M5 bounds-and-evals.md_
-- **Evals:** _placeholder, defined in M5 bounds-and-evals.md_
-
-## The golden rule, applied
-
-_One sentence per above-the-line decision: why it stays human (which of reversibility / blast radius / measurability failed)._
-
-## Hardest call
-
-_Your toughest "above vs below" decision and how you resolved it. (Share this in `#cohort-channel`.)_
+1. **Pull a project’s state and recent activity** (Below): Read-only and checkable, so Cortex owns it.
+2. **Decide which past updates / context are relevant** (Below): Cheap to correct and low-risk; a wrong pick just makes a weaker draft.
+3. **Draft the leadership status update** (Below): Nothing leaves the building until a human sends, so Cortex owns the draft.
+4. **Decide the tone / commitment level of the update** (Above): All three axes are middling, so a human confirms the call.
+5. **Choose which risk call to escalate** (HITL): All three axes are middling, so a human confirms the call.
+6. **Propose a story batch within the cap** (HITL): A commitment is hard to walk back and tone is fuzzy to measure, human approves.
+7. **Post an update, or approve a company-wide one** (Above): Irreversible and high blast radius, a human owns this, always.
