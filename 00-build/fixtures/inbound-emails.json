@@ -1,0 +1,11 @@
+{
+  "unread_count": 1,
+  "emails": [
+    {
+      "message_id": "msg_happy_001",
+      "sender": "customer@example.com",
+      "subject": "Bug report - Export button failing on analytics page",
+      "body": "Every time I try to click the CSV export button on the main analytics dashboard, the page throws a 500 error."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "fixtures": [
+    {
+      "id": "missing-unreadable",
+      "title": "Unclear or Missing Data Inbound",
+      "body": "INBOUND EMAIL FROM: user@example.com\nSUBJECT: Help\nBODY:\nIt's broken. Fix it now."
+    },
+    {
+      "id": "missing-context",
+      "title": "Incomplete Error Description",
+      "body": "INBOUND EMAIL FROM: client@enterprise.co\nSUBJECT: Error\nBODY:\nGetting an error message when clicking submit. Please resolve."
+    }
+  ]
+}

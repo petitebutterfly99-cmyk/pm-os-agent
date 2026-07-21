@@ -1,0 +1,19 @@
+{
+  "fixtures": [
+    {
+      "id": "happy-issue",
+      "title": "Standard Customer Issue Triage",
+      "body": "INBOUND EMAIL FROM: customer@example.com\nSUBJECT: Bug report - Export button failing on analytics page\nBODY:\nHi Support Team,\n\nEvery time I try to click the CSV export button on the main analytics dashboard, the page spins for a few seconds and then throws a 500 error. Can you please look into why this is failing?\n\nThanks,\nAlex"
+    },
+    {
+      "id": "happy-enhancement",
+      "title": "Standard Feature Enhancement Request",
+      "body": "INBOUND EMAIL FROM: partner@company.org\nSUBJECT: Feature Request: Dark mode option for settings\nBODY:\nHello,\n\nWe love using the platform for our daily workflows. One small request from our team: would it be possible to add a native dark mode toggle in the user settings? It would really help during late-night reviews.\n\nBest regards,\nJordan"
+    },
+    {
+      "id": "happy-unrelated",
+      "title": "Unrelated Inbound Message",
+      "body": "INBOUND EMAIL FROM: newsletter@marketing-digest.com\nSUBJECT: Your weekly tech digest and trends\nBODY:\nCheck out this week's top stories on artificial intelligence, cloud infrastructure, and software engineering trends!\n\nUnsubscribe here."
+    }
+  ]
+}
