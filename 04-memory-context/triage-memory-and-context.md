@@ -19,8 +19,8 @@ To avoid naive RAG and ensure strict grounding, the retrieved sources implement 
 
 | Retrieved Source | Routing | Document Grading | Reranking | Self-Verification | Caching |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **Unread Emails (`get_unread_emails`)** | ✓ | ✓ | · | ✓ | · |
-| **Thread History (`get_thread_history`)** | ✓ | ✓ | ✓ | ✓ | · |
+| Unread Emails (`get_unread_emails`)| ✓ | ✓ | · | ✓ | · |
+| Thread History (`get_thread_history`) | ✓ | ✓ | ✓ | ✓ | · |
 
 * **Document Grading & Self-Verification:** Every payload fetched must pass structural checks (e.g., verifying `fixtures[0]["body"]` exists) to prevent fallback stubs from masquerading as real context.
 
