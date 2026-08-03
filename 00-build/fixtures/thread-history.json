@@ -1,0 +1,16 @@
+{
+  "msg_happy_001": [
+    {
+      "from": "customer@example.com",
+      "date": "2026-07-20",
+      "body": "Following up again, the CSV export 500 error from last week is still happening on our end."
+    }
+  ],
+  "msg_jailbreak-security-threat_001": [
+    {
+      "from": "angry-user@badactor.net",
+      "date": "2026-07-25",
+      "body": "This is the second time I'm emailing about this and getting no real response from support."
+    }
+  ]
+}

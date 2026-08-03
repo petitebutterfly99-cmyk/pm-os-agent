@@ -20,3 +20,7 @@ __pycache__/
 *.local.json
 /traces/
 /runs/
+
+# Cortex triage-agent runtime state (audit log, cost ledger, kill switch)
+00-build/logs/
+00-build/.cortex_halt
