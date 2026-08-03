@@ -1,0 +1,7 @@
+.env
+.env.*
+!.env.example
+logs/
+.cortex_halt
+__pycache__/
+*.pyc

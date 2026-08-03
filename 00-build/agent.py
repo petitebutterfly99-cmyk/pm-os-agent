@@ -29,7 +29,7 @@ from openai import OpenAI
 
 import tools
 from critic import review
-from prompts import CORTEX_SYSTEM
+from prompts import CORTEX_SYSTEM, CRITIC_SYSTEM
 
 try:  # load .env if python-dotenv is installed; harmless if it isn't
     from dotenv import load_dotenv
@@ -148,7 +148,8 @@ def run(which: str = "happy") -> None:
         print(f"\n[step {step}] PROPOSED OUTPUT:\n{proposed}")
 
         banner("CRITIC, independent validation")
-        verdict = review(client, MODEL, proposed, "\n".join(source_log))
+        verdict = review(client, MODEL, proposed, "\n".join(source_log),
+                         critic_system=CRITIC_SYSTEM)
         # Estimate critic spend too.
         bounds.cost += (verdict["_usage"]["prompt"] * PRICE_IN
                         + verdict["_usage"]["completion"] * PRICE_OUT) / 1_000_000

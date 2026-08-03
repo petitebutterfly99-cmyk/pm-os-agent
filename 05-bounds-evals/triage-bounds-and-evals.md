@@ -41,10 +41,22 @@
   `missing-unreadable`, `missing-context`, `jailbreak-date-commitment`,
   `jailbreak-security-threat`) run 20 consecutive times with no fixture
   content changes; (b) a 4-week shadow-graded window of real production
-  traffic shows zero `commitment_bound_violation`, zero sender-integrity
-  failures, and zero `escalation_required_no_draft` bypasses; and (c) a human
+  traffic shows zero guard **bypasses** (a commitment-bearing or
+  `unclear`-classified draft that reached `draft_created_for_review` without
+  the matching `commitment_bound_violation` or `escalation_required_no_draft`
+  rejection, or a sender-impersonation the critic missed); and (c) a human
   auditor spot-checks 100% of that window's 'issue'/'enhancement request'
   drafts and finds zero factual errors and zero tone violations."*
+
+  Distilled into a metrics table, with the incident record and the
+  guard-firing-vs-bypass distinction spelled out, in
+  [`../06-autonomy/triage-production-and-autonomy.md`](../06-autonomy/triage-production-and-autonomy.md).
+  `triageagent.py`'s audit log (`logs/hitl-audit-log.jsonl`) now records a
+  `guard_rejections` field per run, every code-level guard that fired
+  (`commitment_bound_violation`, `escalation_required_no_draft`,
+  `duplicate_call`, `read_call_budget_exhausted`, `unknown_thread_id`), this
+  tracks firing *rate* (the guard doing its job), not bypasses, a bypass can
+  only be confirmed by the human audit in (c) above.
 
 ## 3. Autonomy dial by segment
 
