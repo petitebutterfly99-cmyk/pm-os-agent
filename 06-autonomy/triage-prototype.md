@@ -57,7 +57,7 @@ Real screenshots of *your* Cortex running. These are the `00-build/CORTEX-ANATOM
 cd 00-build
 source .venv/bin/activate
 cp .env.example .env   # add your OPENAI_API_KEY if you haven't already
-python3 triageagent.py happy               # happy path
+             # happy path
 python3 triageagent.py missing-data        # vague/unclear, no-draft escalation
 python3 triageagent.py jailbreak           # commitment-trap injection, refused
 python3 triageagent.py jailbreak-security-threat  # legal-threat/extortion sub-fixture
