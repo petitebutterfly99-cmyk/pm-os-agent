@@ -36,7 +36,7 @@ nothing is ever sent automatically, for any classification.
   - **Live, clickable demo**: a Gradio wrapper in [`00-build/hf-space/`](../00-build/hf-space/)
     around `triageagent.run()` (fixed scenario list, no free-text input), ready to deploy
     to Hugging Face Spaces, see that folder's `README.md` for deploy steps and the
-    cost/abuse-surface considerations to read before making it public.
+    cost/abuse-surface considerations to read before making it public. **Note:** This live demo is not available due to the additional cost required to create the space on Hugging Face.
 
 ## Screenshots (required, collected M2 to M6)
 
