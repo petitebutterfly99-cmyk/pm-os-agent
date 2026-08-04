@@ -30,7 +30,7 @@ This repo is my final project for the Run Your AI Agent Team Certification, **Co
 ### M6 · Autonomy &amp; Production
 - **Production &amp; autonomy plan**: [`06-autonomy/triage-production-and-autonomy.md`](06-autonomy/triage-production-and-autonomy.md)
 - **Prototype write-up**: [`06-autonomy/triage-prototype.md`](06-autonomy/triage-prototype.md)
-- **Build insights**:  [`06-autonomy/triage-build-insights.md`]
+- **Build insights**: [`06-autonomy/triage-build-insights.md`]
 ---
 
 ## Ship plan
